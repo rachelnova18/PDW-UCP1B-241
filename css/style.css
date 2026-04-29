@@ -1,0 +1,270 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: url("https://images.unsplash.com/photo-1518770660439-4636190af475") no-repeat center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(226, 114, 91, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+/* ===== NAV DI HERO ===== */
+.hero-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-nav a {
+    background: white;
+    color: #E2725B;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-nav a:hover {
+    background: #E2725B;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ❌ MATIKAN STYLE NAV LAMA */
+nav {
+    background: none;
+    padding: 0;
+}
+
+/* ===== SECTION ===== */
+section {
+    padding: 30px;
+    background: #FDF6EC;
+}
+
+/* ===== TABLE ===== */
+table {
+    margin: auto;
+    width: 80%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #E2725B;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    background: #E2725B;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #C65A45;
+}
+
+/* ===== FORM SECTION ===== */
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #FDF6EC;
+}
+
+/* ===== FORM CARD ===== */
+.form-card {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== TITLE ===== */
+.form-card h2 {
+    text-align: center;
+    color: #E2725B;
+    margin-bottom: 20px;
+}
+
+/* ===== INPUT ===== */
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+    border-color: #E2725B;
+}
+
+/* ===== BUTTON ===== */
+.form-card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 25px;
+    background: #E2725B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background: #C65A45;
+}
+
+/* ===== GALLERY SECTION ===== */
+.gallery-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    background: #FDF6EC;
+}
+
+/* ===== CARD ===== */
+.gallery-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== TITLE ===== */
+.gallery-card h2 {
+    color: #E2725B;
+}
+
+/* ===== IMAGE ===== */
+.gallery-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* ===== BUTTON ===== */
+.gallery-card button {
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background: #E2725B;
+    color: white;
+    border: none;
+}
+
+.gallery-card button:hover {
+    background: #C65A45;
+}
+
+/* GALLERY */
+.gallery-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+    background: #FDF6EC;
+}
+
+.gallery-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.gallery-card h2 {
+    color: #E2725B;
+}
+
+/* FOTO */
+.gallery-card img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* VIDEO & SPOTIFY */
+iframe {
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+/* SCROLL FOTO */
+.image-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+/* biar scroll halus */
+.image-scroll {
+    scroll-behavior: smooth;
+}
+
+/* sembunyikan scrollbar (opsional) */
+.image-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* STYLE FOTO */
+.image-scroll img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.image-scroll img {
+    transition: 0.3s;
+}
+
+.image-scroll img:hover {
+    transform: scale(1.05);
+}

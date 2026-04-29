@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Anggota</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HERO (SAMA SEPERTI HOME) -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Form Pendaftaran</h1>
+        <p>Bergabung bersama Tech Community</p>
+
+        <nav class="hero-nav">
+            <a href="index.html">Home</a>
+            <a href="form.html">Daftar</a>
+            <a href="gallery.html">Multimedia</a>
+        </nav>
+    </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+    <form id="formAnggota" class="form-card">
+
+        <h2>Daftar Sekarang</h2>
+
+        <input type="text" id="nama" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <select id="minat">
+            <option value="Web Development">Web Development</option>
+            <option value="AI">AI</option>
+            <option value="Cyber Security">Cyber Security</option>
+        </select>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</section>
+
+<script src="js/form.js"></script>
+
+</body>
+</html>
